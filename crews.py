@@ -22,17 +22,6 @@ crew = Crew(
     tasks=[planer_task, writer_task, editor_task]
 )
 
-# crew = Crew(
-#     agents=[
-#         email_personalizer,
-#         ghostwriter
-#     ],
-#     tasks=[
-#         *personalize_email_tasks,
-#         *ghostwrite_email_tasks
-#     ],
-#     max_rpm=29
-# )
 start_time = time.time()
 
 results = crew.kickoff()
